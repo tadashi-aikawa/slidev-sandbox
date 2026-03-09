@@ -230,7 +230,7 @@ pnpm add @slidev/cli
 
 `{*}{maxHeight:}` で指定する。`%` が良さげ。
 
-```vue [MethodBadge.vue] {*}{maxHeight:'80%'}
+```vue [MethodBadge.vue] {*}{maxHeight:'80%', lines: true}
 <script setup lang="ts">
 import type { PrimitiveProps } from "reka-ui";
 import type { HTMLAttributes } from "vue";
@@ -265,9 +265,9 @@ const delegatedProps = reactiveOmit(props, "class");
 
 # 高度なコードブロック
 
-ハイライト指定は `{1,10}` や `{5-7}` のように。
+ハイライト指定は `{1,10}` や `{5-7}` のように。`|` 区切りでアニメーション。
 
-```vue [MethodBadge.vue] {10-14}{maxHeight:'85%'}
+```vue [MethodBadge.vue] {1,18|2-8|10-15|17}{maxHeight:'80%', lines: true}
 <script setup lang="ts">
 import type { PrimitiveProps } from "reka-ui";
 import type { HTMLAttributes } from "vue";
