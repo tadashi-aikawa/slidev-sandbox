@@ -1,11 +1,12 @@
 ---
 title: Markdown Documentationのススメ
+colorSchema: light
 canvasWidth: 1280
 themeConfig:
   primary: "#3db680"
-layout: cover
-comark: true
 background: ./public/attachments/cat-minerva.webp
+comark: true
+layout: cover
 ---
 
 # Slidevのレイアウトベーススライド

@@ -42,7 +42,7 @@
 */
 
 .slidev-layout p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   line-height: inherit;
 }
 
@@ -150,7 +150,7 @@
   font-size: 0.7em;
   width: 1.8em;
   height: 1.8em;
-  top: 1.53em;
+  top: 1.43em;
   left: -2.6em;
   display: grid;
   place-items: center;
@@ -325,4 +325,53 @@
 .link-card-v2-site-name {
   font-size: 0.75rem;
   color: slategray;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                         Mermaid                         │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* 欠ける問題の修復 */
+.mermaid,
+.mermaid svg,
+.mermaid foreignObject,
+.mermaid .label {
+  font-family: "Noto Sans JP", sans-serif !important;
+  letter-spacing: 0 !important;
+}
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                    結論メッセージ                       │
+ * ╰─────────────────────────────────────────────────────────╯
+ */
+
+.slide-conclusion-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 0.35em 0.9em 0.42em;
+  border: 2px solid color-mix(in srgb, var(--color-primary) 28%, white);
+  background: color-mix(in srgb, var(--color-background) 88%, white);
+  box-shadow: 0 10px 28px rgb(89 89 89 / 12%);
+  backdrop-filter: blur(6px);
+}
+
+.slide-conclusion-message p {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 2.2em;
+  font-weight: bold;
+  line-height: 1.45;
+  letter-spacing: 0.06em;
+  text-align: center;
+  white-space: pre-line;
 }

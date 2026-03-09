@@ -12,7 +12,7 @@ type ChapterState = "current" | "done" | "upcoming";
 
 const props = defineProps<{
   /** 1はじまり */
-  activeChapter: number | undefined;
+  activeChapter?: number | undefined;
 }>();
 
 const getChapterState = (index: number): ChapterState => {
