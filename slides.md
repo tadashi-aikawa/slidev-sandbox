@@ -36,6 +36,43 @@ activeChapter: 1
 - 書いたり
 
 ---
+
+# 最後に結論を表示
+
+ここには
+
+- 普通の説明を
+- 書いたりして
+- クリックすると
+
+<conclusion>
+
+結論が表示される
+
+</conclusion>
+
+---
+
+# 最後に結論をオーバーレイで表示
+
+ここには
+
+- 普通の説明を
+- 書いたりして
+- いるけど
+
+スライド全体を
+
+- ぎっしり使っていて
+- 領域がないときでも
+
+<conclusion overlay>
+
+オーバーレイで中央に結論が表示される
+
+</conclusion>
+
+---
 layout: fact
 ---
 
@@ -50,6 +87,12 @@ const a = 1;
 const b = 2;
 // コードブロックには向かない。その場合は `layout: center` を使おう
 ```
+
+<refer>
+
+出典の明記
+
+</refer>
 
 ---
 layout: center
@@ -72,7 +115,7 @@ layout: image
 image: ./public/attachments/cat-minerva.webp
 ---
 
-### 画像を全面表示したい場合
+# 画像を全面表示したい場合{.!text-white}
 
 ---
 
@@ -111,15 +154,17 @@ background-size: contain
 を追加することで縦が収まるサイズに調整している。
 
 ---
-layout: iframe
+layout: iframe-refer
 url: https://minerva.mamansoft.net/Notes/%E3%83%9F%E3%83%8D%E3%83%AB%E3%83%B4%E3%82%A1
+refer-text: Minerva
+scale: 1 # default
 ---
 
 # 全面iframe
 
 ---
 
-## Richリンクカード
+# Richリンクカード
 
 <div class="link-card-v2">
   <div class="link-card-v2-site">
