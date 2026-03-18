@@ -7,6 +7,8 @@ themeConfig:
 background: ./attachments/cat-minerva.webp
 comark: true
 layout: cover
+# /index.html が必須の環境では /index.html#3 のような形式を許容させる
+routerMode: hash
 ---
 
 # Slidevのレイアウトベーススライド
