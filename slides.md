@@ -4,7 +4,7 @@ colorSchema: light
 canvasWidth: 1280
 themeConfig:
   primary: "#3db680"
-background: ./public/attachments/cat-minerva.webp
+background: ./attachments/cat-minerva.webp
 comark: true
 layout: cover
 ---
@@ -112,7 +112,7 @@ console.log(a + b);
 
 ---
 layout: image
-image: ./public/attachments/cat-minerva.webp
+image: ./attachments/cat-minerva.webp
 ---
 
 # 画像を全面表示したい場合{.!text-white}
@@ -152,6 +152,25 @@ background-size: contain
 ```
 
 を追加することで縦が収まるサイズに調整している。
+
+---
+
+# 画像パスの注意点
+
+`layout: image` の `image` プロパティや `background` に画像パスを指定する場合
+
+- 画像は `public/` 配下に配置する (デプロイ時に参照できなくなるため)
+- パスに `./public/` を含めない (ビルド時に自動解決されるため)
+
+```yaml
+# ✅ 正しい例
+image: ./attachments/cat-minerva.webp
+background: ./attachments/cat-minerva.webp
+
+# ❌ 誤った例
+image: ./public/attachments/cat-minerva.webp
+background: ./public/attachments/cat-minerva.webp
+```
 
 ---
 layout: iframe-refer
