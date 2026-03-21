@@ -189,17 +189,15 @@ scale: 1 # default
 
 <div class="link-card-v2">
   <div class="link-card-v2-site">
-    <img class="link-card-v2-site-icon" src="https://github.githubassets.com/favicons/favicon.svg" />
-    <span class="link-card-v2-site-name">GitHub</span>
+    <img class="link-card-v2-site-icon" src="https://publish-01.obsidian.md/access/35d05cd1bf5cc500e11cc8ba57daaf88/favicon-64.png" />
+    <span class="link-card-v2-site-name">Minerva</span>
   </div>
   <div class="link-card-v2-title">
-    GitHub - tadashi-aikawa/slidev-preview.nvim: Neovim plugin that syncs your Slidev presentation in the browser with your cursor position in `slides.md`.
+    📘オブシディアの1日から紐解くObsidianの使い方
   </div>
-    <div class="link-card-v2-content">
-    Neovim plugin that syncs your Slidev presentation in the browser with your cursor position in `slides.md`. - tad ... 
-  </div>
-  <img class="link-card-v2-image" src="https://opengraph.githubassets.com/535fcff3e8d6f996c4e900572f4b30b10d7ddffd65056996751e1b63ac0cffd4/tadashi-aikawa/slidev-preview.nvim" />
-  <a href="https://github.com/tadashi-aikawa/slidev-preview.nvim"></a>
+  <div class="link-card-v2-content">平日の1日を追いながら、Obsidianでのデイリーノート運用、SilhouetteやVarious Complementsなど自作プラグインを使ったタスク管理・議事録・ドキュメント連携の実例を、ミネルヴァとオブシディアが紹介します。</div>
+  <img class="link-card-v2-image" src="https://publish-01.obsidian.md/access/35d05cd1bf5cc500e11cc8ba57daaf88/%F0%9F%93%98Articles/attachments/2025-12-25.webp" />
+  <a data-href="📘オブシディアの1日から紐解くObsidianの使い方" class="internal-link"></a>
 </div>
 
 ---
@@ -215,6 +213,21 @@ layout: two-cols-header
 ::right::
 
 - 右側
+
+---
+layout: two-cols-header-ratio
+columns: "3:7"
+---
+
+# ヘッダの下を左右に分割 (比率指定)
+
+::left::
+
+- 左側 (30%)
+
+::right::
+
+- 右側 (70%)
 
 ---
 layout: two-cols
