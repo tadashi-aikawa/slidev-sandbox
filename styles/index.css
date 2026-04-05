@@ -316,6 +316,7 @@
   height: 100%;
   text-indent: -999px;
   z-index: 2;
+  border-bottom: 0;
 }
 
 .link-card-v2-site-icon {
