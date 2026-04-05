@@ -194,40 +194,40 @@
  * ╰─────────────────────────────────────────────────────────╯
 */
 
-/* .slidev-layout table { */
-/*   font-size: 0.75em; */
-/*   margin-top: 2em; */
-/* } */
-/**/
-/* .slidev-layout table thead th { */
-/*   color: var(--color-primary); */
-/*   background-color: var(--color-background); */
-/*   padding: 0.5em 1em; */
-/*   text-align: start; */
-/*   border-color: var(--color-background); */
-/*   border-bottom-color: var(--color-primary); */
-/*   border-bottom-width: 2px; */
-/* } */
-/**/
-/* .slidev-layout table tbody tr, */
-/* .slidev-layout table tbody td { */
-/*   font-size: 0.95em; */
-/*   padding: 0.5em 1em; */
-/*   border-color: var(--color-background); */
-/*   border-bottom-color: var(--color-dimmed); */
-/* } */
-/**/
-/* .slidev-layout table tbody tr:nth-child(odd) td { */
-/*   padding: 0.5em 1em; */
-/*   border-color: var(--color-background); */
-/*   border-bottom-color: var(--color-dimmed); */
-/*   background-color: var(--color-background); */
-/* } */
-/**/
-/* .slidev-layout.headless-table table thead th { */
-/*   border-bottom-color: var(--color-dimmed); */
-/*   border-bottom-width: 1px; */
-/* } */
+.slidev-layout table {
+  font-size: 0.75em;
+  margin-top: 2em;
+}
+
+.slidev-layout table thead th {
+  color: var(--color-primary);
+  background-color: var(--color-background);
+  padding: 0.5em 1em;
+  text-align: start;
+  border-color: var(--color-background);
+  border-bottom-color: var(--color-primary);
+  border-bottom-width: 2px;
+}
+
+.slidev-layout table tbody tr,
+.slidev-layout table tbody td {
+  font-size: 0.95em;
+  padding: 0.5em 1em;
+  border-color: var(--color-background);
+  border-bottom-color: var(--color-dimmed);
+}
+
+.slidev-layout table tbody tr:nth-child(odd) td {
+  padding: 0.5em 1em;
+  border-color: var(--color-background);
+  border-bottom-color: var(--color-dimmed);
+  background-color: var(--color-background);
+}
+
+.slidev-layout.headless-table table thead th {
+  border-bottom-color: var(--color-dimmed);
+  border-bottom-width: 1px;
+}
 
 /*
  * ╭─────────────────────────────────────────────────────────╮
