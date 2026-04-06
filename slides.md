@@ -121,6 +121,15 @@ image: ./attachments/cat-minerva.webp
 
 ---
 
+# 画像をトリミングしたい場合
+
+
+<div class="h-140 overflow-hidden">
+    <img src="/attachments/cat-minerva.webp" class="block" />
+</div>
+
+---
+
 # 動画再生 `自動再生不要ならautoplayは外す`
 
 <SlidevVideo controls autoplay="once" autoreset="slide" class="mx-auto h-90%">
