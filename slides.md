@@ -117,12 +117,20 @@ layout: image
 image: ./attachments/cat-minerva.webp
 ---
 
-# 画像を全面表示したい場合{.!text-white}
+# 画像を全面表示したい場合 (中心を軸に展開){.!text-white}
+
+---
+layout: image
+image: ./attachments/cat-minerva.webp
+backgroundSize: cover
+backgroundPosition: left top
+---
+
+# 画像を全面表示したい場合 (起点を左上にあわせる){.!text-white}
 
 ---
 
 # 画像をトリミングしたい場合
-
 
 <div class="h-140 overflow-hidden">
     <img src="/attachments/cat-minerva.webp" class="block" />
