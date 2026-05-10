@@ -69,7 +69,7 @@
 
 .slidev-layout h1 + p {
   opacity: 1;
-  line-height: 3rem;
+  line-height: 1.3 !important;
 }
 .slidev-layout.fact h1 {
   font-size: 1.3em;
@@ -228,6 +228,10 @@
 .slidev-layout.headless-table table thead th {
   border-bottom-color: var(--color-dimmed);
   border-bottom-width: 1px;
+}
+
+.table-compact {
+  font-size: 1.9em;
 }
 
 /*
