@@ -174,9 +174,9 @@ background-size: contain
 
 ---
 
-# 画像パスの注意点
+# 画像パスの注意点1
 
-`layout: image` の `image` プロパティや `background` に画像パスを指定する場合
+`layout: image`の`image`プロパティや`background`に画像パスを指定する場合
 
 - 画像は `public/` 配下に配置する (デプロイ時に参照できなくなるため)
 - パスに `./public/` を含めない (ビルド時に自動解決されるため)
@@ -189,6 +189,23 @@ background: ./attachments/cat-minerva.webp
 # ❌ 誤った例
 image: ./public/attachments/cat-minerva.webp
 background: ./public/attachments/cat-minerva.webp
+```
+
+---
+
+# 画像パスの注意点2
+
+`<img src="...">` に指定するときも同様に
+
+- 画像は `public/` 配下に配置する (デプロイ時に参照できなくなるため)
+- パスに `./public/` を含めない (`/public` なしのパスにデプロイされるため)
+
+```html
+<!-- ✅ 正しい例 -->
+<img src="./attachments/cat-minerva.webp" />
+
+<!-- ❌ 誤った例 -->
+<img src="./public/attachments/cat-minerva.webp" />
 ```
 
 ---
