@@ -4,7 +4,7 @@ import { cva } from "class-variance-authority";
 const chapters = [
   "メインレイアウトパターン",
   "コードブロック",
-  "???",
+  "アニメーション",
   "???",
 ] as const;
 

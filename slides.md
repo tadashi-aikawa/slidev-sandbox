@@ -416,7 +416,25 @@ const x = -1;
 ````
 
 ---
-layout: fact
+title: Chapter3
+layout: chapter-divider
+activeChapter: 3
 ---
 
-TODO: 続き
+---
+
+# アニメーション
+
+<div v-click.fade-in>
+
+内部の要素をフェードイン
+
+</div>
+
+---
+
+# スポットライト
+
+クリックするとスポットライトがあたる。
+
+<div v-click.fade-in class="spotlight left-32 top-96 w-128 h-64"></div>
