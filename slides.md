@@ -174,39 +174,23 @@ background-size: contain
 
 ---
 
-# 画像パスの注意点1
+# 画像パスの注意点
 
-`layout: image`の`image`プロパティや`background`に画像パスを指定する場合
+指定する対象によって正しくパスを入力しないと『ビルド時』『デプロイ時』に解決しなくなる。
 
-- 画像は `public/` 配下に配置する (デプロイ時に参照できなくなるため)
-- パスに `./public/` を含めない (ビルド時に自動解決されるため)
+| 対象                                       | パスの開始              |
+| ------------------------------------------ | ----------------------- |
+| HTMLの `src` 属性                          | `./public/attachments/` |
+| Vueファイル内の `src` 属性 に渡されるprops | `./attachments/`        |
+| フロントマターのプロパティ                 | `/attachments/`         |
+| Markdownの画像リンク                       | `/attachments/`         |
+| CSSの `url`                                | `/attachments/`         |
 
-```yaml
-# ✅ 正しい例
-image: /attachments/cat-minerva.webp
-background: /attachments/cat-minerva.webp
+<refer>
 
-# ❌ 誤った例
-image: /attachments/cat-minerva.webp
-background: /attachments/cat-minerva.webp
-```
+[📕Slidevの画像パスに対する注意 - Minerva](https://minerva.mamansoft.net/Notes/%F0%9F%93%95Slidev%E3%81%AE%E7%94%BB%E5%83%8F%E3%83%91%E3%82%B9%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E6%B3%A8%E6%84%8F)
 
----
-
-# 画像パスの注意点2
-
-`<img src="...">` に指定するときも同様に
-
-- 画像は `public/` 配下に配置する (デプロイ時に参照できなくなるため)
-- パスに `./public/` を含めない (`/public` なしのパスにデプロイされるため)
-
-```html
-<!-- ✅ 正しい例 -->
-<img src="/attachments/cat-minerva.webp" />
-
-<!-- ❌ 誤った例 -->
-<img src="/attachments/cat-minerva.webp" />
-```
+</refer>
 
 ---
 layout: iframe-refer
