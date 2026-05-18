@@ -4,7 +4,7 @@ colorSchema: light
 canvasWidth: 1280
 themeConfig:
   primary: "#3db680"
-background: ./attachments/cat-minerva.webp
+background: /attachments/cat-minerva.webp
 comark: true
 layout: cover
 # /index.html が必須の環境では /index.html#3 のような形式を許容させる
@@ -114,14 +114,14 @@ console.log(a + b);
 
 ---
 layout: image
-image: ./attachments/cat-minerva.webp
+image: /attachments/cat-minerva.webp
 ---
 
 # 画像を全面表示したい場合 (中心を軸に展開){.!text-white}
 
 ---
 layout: image
-image: ./attachments/cat-minerva.webp
+image: /attachments/cat-minerva.webp
 backgroundSize: cover
 backgroundPosition: left top
 ---
@@ -133,7 +133,7 @@ backgroundPosition: left top
 # 画像をトリミングしたい場合
 
 <div class="h-140 overflow-hidden">
-    <img src="/attachments/cat-minerva.webp" class="block" />
+    <img src="./public/attachments/cat-minerva.webp" class="block" />
 </div>
 
 ---
@@ -183,12 +183,12 @@ background-size: contain
 
 ```yaml
 # ✅ 正しい例
-image: ./attachments/cat-minerva.webp
-background: ./attachments/cat-minerva.webp
+image: /attachments/cat-minerva.webp
+background: /attachments/cat-minerva.webp
 
 # ❌ 誤った例
-image: ./public/attachments/cat-minerva.webp
-background: ./public/attachments/cat-minerva.webp
+image: /attachments/cat-minerva.webp
+background: /attachments/cat-minerva.webp
 ```
 
 ---
@@ -202,10 +202,10 @@ background: ./public/attachments/cat-minerva.webp
 
 ```html
 <!-- ✅ 正しい例 -->
-<img src="./attachments/cat-minerva.webp" />
+<img src="/attachments/cat-minerva.webp" />
 
 <!-- ❌ 誤った例 -->
-<img src="./public/attachments/cat-minerva.webp" />
+<img src="/attachments/cat-minerva.webp" />
 ```
 
 ---
