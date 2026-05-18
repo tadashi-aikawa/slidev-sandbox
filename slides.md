@@ -159,6 +159,27 @@ background-size: contain
 を追加することで縦が収まるサイズに調整している。
 
 ---
+layout: image-left
+image: https://publish-01.obsidian.md/access/35d05cd1bf5cc500e11cc8ba57daaf88/Notes/attachments/colot.webp
+background-size: cover
+ratio: 25
+---
+
+# 左25%を画像にしたい場合
+
+```yaml
+ratio: 25
+```
+
+で割合を指定できる。要独自コンポーネント。
+
+```yaml
+background-size: cover
+```
+
+`contain` ではなく `cover` にすることで最大表示。
+
+---
 layout: image-right
 image: https://publish-01.obsidian.md/access/35d05cd1bf5cc500e11cc8ba57daaf88/Notes/attachments/obsidian-mini2.webp
 background-size: contain
