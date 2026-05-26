@@ -475,3 +475,21 @@ activeChapter: 3
 クリックするとスポットライトがあたる。
 
 <div v-click.fade-in class="spotlight left-32 top-96 w-128 h-64"></div>
+
+---
+title: Chapter4
+layout: chapter-divider
+activeChapter: 4
+---
+
+---
+
+# 改訂履歴
+
+右上に改訂履歴が表示される。
+
+<revision-histories :revisions="[
+  {date: '2026-05-26', content: '初版'},
+  {date: '2026-05-27', content: 'ちょっと修正'},
+  {date: '2026-05-30', content: 'ガッツリ修正しました'}
+]" />
