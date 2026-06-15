@@ -1,11 +1,37 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Slidev Sandbox
 
-To start the slide show:
+Slidevのサンドボックスプロジェクト。コピーして使える。
 
-- `bun install`
-- `bun dev`
-- visit <http://localhost:3030>
+## インストール
 
-Edit the [slides.md](./slides.md) to see the changes.
+```bash
+bun ci
+```
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+## 起動
+
+```bash
+bun dev
+```
+
+http://localhost:3030 にアクセス。
+
+## ビルド
+
+```bash
+bun run build
+```
+
+確認は
+
+```bash
+bun vite preview
+```
+
+## 編集
+
+Neovimを使っているなら [slidev-preview.nvim](https://github.com/tadashi-aikawa/slidev-preview.nvim) がオススメ。
+
+## ベースとして新しいスライドをつくる
+
+GitHubの `Use this template` から。
