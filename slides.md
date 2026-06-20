@@ -460,11 +460,45 @@ activeChapter: 3
 
 ---
 
-# アニメーション
+# アニメーション 基本
 
 <div v-click.fade-in>
 
 内部の要素をフェードイン
+
+</div>
+
+<div v-click.fade-in>
+
+2回目のクリックで表示
+
+</div>
+
+<div v-after.fade-in>
+
+直前のアニメーションと同時に表示
+
+</div>
+
+---
+
+# アニメーション 表示要素の切り替え
+
+<div v-click.fade-in="[1, 2]">
+
+1回目のクリックのみで表示
+
+</div>
+
+<div v-click.fade-in="[2, 3]">
+
+2回目のクリックのみで表示
+
+</div>
+
+<div v-click.fade-in="3">
+
+3回目のクリックのみで表示
 
 </div>
 
