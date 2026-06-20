@@ -508,7 +508,7 @@ activeChapter: 3
 
 クリックするとスポットライトがあたる。
 
-<div v-click.fade-in class="spotlight left-32 top-96 w-128 h-64"></div>
+<Spotlight v-click.fade-in class="left-32 top-96 w-128 h-64" />
 
 ---
 title: Chapter4
