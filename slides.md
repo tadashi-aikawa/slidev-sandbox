@@ -1,5 +1,5 @@
 ---
-title: Markdown Documentationのススメ
+title: Slidevのレイアウトベーススライド
 colorSchema: light
 canvasWidth: 1280
 themeConfig:
@@ -9,6 +9,7 @@ comark: true
 layout: cover
 # /index.html が必須の環境では /index.html#3 のような形式を許容させる
 routerMode: hash
+favicon: https://publish-01.obsidian.md/access/35d05cd1bf5cc500e11cc8ba57daaf88/favicon-64.png
 ---
 
 # Slidevのレイアウトベーススライド
