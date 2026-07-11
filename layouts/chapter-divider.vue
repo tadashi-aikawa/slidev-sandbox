@@ -1,12 +1,12 @@
 <script setup lang="ts">
+import { useSlideContext } from "@slidev/client";
 import { cva } from "class-variance-authority";
 
-const chapters = [
-  "メインレイアウトパターン",
-  "コードブロック",
-  "アニメーション",
-  "???",
-] as const;
+const { $slidev } = useSlideContext();
+
+// slides.md の headmatter で `chapters: [...]` として定義する
+const chapters: string[] =
+  ($slidev.configs as { chapters?: string[] }).chapters ?? [];
 
 type ChapterState = "current" | "done" | "upcoming";
 

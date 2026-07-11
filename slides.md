@@ -5,6 +5,12 @@ canvasWidth: 1280
 themeConfig:
   primary: "#3db680"
 background: /attachments/cat-minerva.webp
+# chapter-divider レイアウトが表示する章立て
+chapters:
+  - メインレイアウトパターン
+  - コードブロック
+  - アニメーション
+  - "???"
 comark: true
 layout: cover
 # /index.html が必須の環境では /index.html#3 のような形式を許容させる
